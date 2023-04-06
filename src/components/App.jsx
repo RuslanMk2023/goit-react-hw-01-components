@@ -3,20 +3,16 @@ import data from 'data/data.json';
 import friends from 'data/friends.json';
 import transactions from 'data/transactions.json'
 
-import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/Statistics';
-import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Profile, Statistics, FriendList, TransactionHistory } from 'components';
 
 const appStyle = {
   height: '100vh',
   display: 'flex',
   flexDirection: 'column',
-  pading: '20px'
-}
+  pading: '20px',
+};
 
 export const App = () => {
-
   return (
     <div style={appStyle}>
       <Profile
@@ -31,7 +27,7 @@ export const App = () => {
 
       <FriendList friends={friends} />
 
-      <TransactionHistory items ={transactions}/>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
