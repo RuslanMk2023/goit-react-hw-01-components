@@ -10,7 +10,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  background-color: #182635;
+  background-color: #34495E;
   color: #f3f4f5;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .name {
-  color: blue;
+  color: #AED6F1;
   font-size: 20px;
 }
 
