@@ -5,8 +5,8 @@ import styles from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
-    {title.lengh > 0 && <h2 className={styles.title}></h2>}
-
+    {title.length > 0 && <h2 className={styles.title}> {title} </h2>}
+    
     <ul className={styles.stat_list}>
       {stats.map(({ id, label, percentage }) => {
         return (
