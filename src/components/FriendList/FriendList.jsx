@@ -5,16 +5,14 @@ import { WrapperStyledFriendList } from './styles';
 
 export const FriendList = ({ friends }) => (
   <WrapperStyledFriendList>
-    {friends.map(({ avatar, name, isOnline, id }) => {
-      return (
-        <FriendListItem
-          avatar={avatar}
-          name={name}
-          isOnline={isOnline}
-          key={id}
-        />
-      );
-    })}
+    {friends.map(({ avatar, name, isOnline, id }) => (
+      <FriendListItem
+        avatar={avatar}
+        name={name}
+        isOnline={isOnline}
+        key={id}
+      />
+    ))}
   </WrapperStyledFriendList>
 );
 
