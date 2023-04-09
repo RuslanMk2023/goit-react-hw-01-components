@@ -6,16 +6,13 @@ import {
   StyledUserName,
 } from './styles';
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
-
-  return (
-    <StyledUserInfo>
-      <StyledUserStatus isOnline={isOnline} />
-      <StyledUserAvatar alt={`Avatar of ${name}`} src={avatar} />
-      <StyledUserName> {name} </StyledUserName>
-    </StyledUserInfo>
-  );
-};
+export const FriendListItem = ({ avatar, name, isOnline }) => (
+  <StyledUserInfo>
+    <StyledUserStatus isOnline={isOnline} />
+    <StyledUserAvatar alt={`Avatar of ${name}`} src={avatar} />
+    <StyledUserName> {name} </StyledUserName>
+  </StyledUserInfo>
+);
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
